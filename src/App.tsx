@@ -35,7 +35,7 @@ export const App: React.FC = () => {
     setInputField(person.name);
   };
 
-  const handleOnBlur = () => {
+  const handleInputOnBlur = () => {
     setTimeout(() => {
       setIsVisibleDropDown(false);
     }, 150);
@@ -64,7 +64,7 @@ export const App: React.FC = () => {
               data-cy="search-input"
               onChange={handleSearchQuery}
               onFocus={() => setIsVisibleDropDown(true)}
-              onBlur={handleOnBlur}
+              onBlur={handleInputOnBlur}
             />
           </div>
 
